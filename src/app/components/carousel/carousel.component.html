@@ -1,0 +1,12 @@
+<ngb-carousel *ngIf="listImg">
+    <ng-template ngbSlide *ngFor="let item of listImg">
+        <div class="picsum-img-wrapper">
+            <img class="tt-slide-img" [src]="item.imageUrl" alt="slide">
+        </div>
+        <div class="carousel-caption">
+            <h1 class="tt-carousel-title">
+                {{item.title}}
+            </h1>
+        </div>
+    </ng-template>
+</ngb-carousel>

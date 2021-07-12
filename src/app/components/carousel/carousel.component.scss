@@ -1,0 +1,20 @@
+.tt-slide-img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.tt-carousel-title {
+    font-size: 7rem;
+}
+
+::ng-deep {
+    .visually-hidden {
+        display: none;
+    }
+
+    .carousel-caption {
+        bottom: 33% !important;
+        font-size: 7rem !important;
+    }
+}
