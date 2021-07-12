@@ -1,10 +1,12 @@
-.btn {
+@import "../variables/body";
+
+.btn-tt {
   position: relative;
   display: inline-block;
   vertical-align: middle;
   width: auto;
   margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 15px;
   line-height: 2em;
   font-weight: 600;
@@ -15,9 +17,6 @@
   outline: 0;
   transition: color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out;
   padding: 6px 39px;
-  color: #fff;
-  background-color: #000;
-  border: 2px solid #000;
   cursor: pointer;
 }
 
@@ -25,4 +24,10 @@
   font-size: 20px;
   background: transparent;
   border: none;
+}
+
+.btn-tt-outline {
+  color: $white;
+  background: transparent;
+  border: solid 2px $white;
 }

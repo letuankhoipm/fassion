@@ -5,16 +5,24 @@
 }
 
 .tt-carousel-title {
-    font-size: 7rem;
+  font-size: 7rem;
+}
+
+.tt-shadow {
+  width: 100vw;
+  height: 600px;
+  background: rgba(32, 32, 32, .4);
+  position: absolute;
+  top: 0;
 }
 
 ::ng-deep {
-    .visually-hidden {
-        display: none;
-    }
+  .visually-hidden {
+    display: none;
+  }
 
-    .carousel-caption {
-        bottom: 33% !important;
-        font-size: 7rem !important;
-    }
+  .carousel-caption {
+    bottom: 33% !important;
+    font-family: 'Tangerine', cursive !important;
+  }
 }

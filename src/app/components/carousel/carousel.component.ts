@@ -12,17 +12,20 @@ export class CarouselComponent implements OnInit {
     {
       id: 1,
       imageUrl: 'assets/images/a1.jpg',
-      title: 'KOREAN STYLE'
+      title: 'Havana Serum',
+      action: 'ĐẶT HÀNG'
     },
     {
       id: 2,
       imageUrl: 'assets/images/a2.jpg',
-      title: 'AUTUMN FASHION'
+      title: 'Sun di Gioia',
+      action: 'MUA NGAY'
     },
     {
       id: 3,
       imageUrl: 'assets/images/a3.jpg',
-      title: 'VIETNAMESE TRADITIONAL'
+      title: 'Gucci Bobby Brown',
+      action: 'XEM CHI TIẾT'
     },
   ];
   constructor(config: NgbCarouselConfig) {
