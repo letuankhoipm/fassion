@@ -1,0 +1,48 @@
+<div class="card tt-card" *ngIf="data">
+    <img class="card-img-top tt-img-card" [src]="data.imageUrl" alt="product">
+    <div class="card-body text-center">
+        <h5 class="font-weight-bold">
+            {{data.name}}
+        </h5>
+        <p class="card-text">
+            {{data.description}}
+        </p>
+        <p>
+            <strong>$</strong>
+            <span>
+                {{data.price}}
+            </span>
+        </p>
+    </div>
+    <div class="tt-card-shadow">
+        <div class="text-center tt-card-shadow-content">
+            <h5 class="font-weight-bold">
+                {{data.name}}
+            </h5>
+            <p class="card-text">
+                {{data.description}}
+            </p>
+            <p>
+                <span>
+                    {{data.price}}
+                </span>
+                <strong>VND</strong>
+            </p>
+        </div>
+    </div>
+    <div class="tt-prod-hover container ">
+        <div class="row h-100">
+            <div class="col-12 my-auto text-center">
+                <button class="btn-icon text-white mx-2">
+                    <i class="fas fa-heart"></i>
+                </button>
+                <button class="btn-icon text-white mx-2">
+                    <i class="fas fa-shopping-bag"></i>
+                </button>
+                <button class="btn-icon text-white mx-2">
+                    <i class="fas fa-eye"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

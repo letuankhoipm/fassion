@@ -31,6 +31,8 @@ export class CarouselComponent implements OnInit {
   constructor(config: NgbCarouselConfig) {
     config.pauseOnHover = true;
     config.interval = 5000;
+    config.interval = 3000;
+    config.animation = true;
    }
 
   ngOnInit(): void {

@@ -1,10 +1,16 @@
-body {
-    font-family: 'Nunito', sans-serif;
-}
-
 .tt-nav-item {
   list-style-type: none;
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Nunito", sans-serif;
+}
+
+.tt-header {
+  height: 150px;
+  background: black;
+  margin-bottom: 70px;
+}
+
+.tt-title {
+  font-size: 3rem;
 }

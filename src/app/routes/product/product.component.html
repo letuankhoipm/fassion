@@ -1,0 +1,23 @@
+<div class="tt-product">
+    <div class="tt-header y-4">
+        <div class="text-white p-4">
+            <p>
+                Home / Product
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-4 pb-4">
+                <h1 class="tt-title">
+                    PRODUCT
+                </h1>
+            </div>
+            <ng-container *ngFor="let data of listProducts">
+                <div class="col-4 mb-4">
+                    <app-product-card [data]="data"></app-product-card>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>
