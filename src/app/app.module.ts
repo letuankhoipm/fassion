@@ -1,4 +1,6 @@
-import { NavbarModule } from './components/navbar/navbar.module';
+import { RouterModule } from '@angular/router';
+import { FooterModule } from '@components/footer/footer.module';
+import { NavbarModule } from '@components/navbar/navbar.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -12,7 +14,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NavbarModule
+    NavbarModule,
+    FooterModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

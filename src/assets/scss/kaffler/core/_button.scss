@@ -1,4 +1,4 @@
-button {
+.btn {
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -19,4 +19,10 @@ button {
   background-color: #000;
   border: 2px solid #000;
   cursor: pointer;
+}
+
+.btn-icon {
+  font-size: 20px;
+  background: transparent;
+  border: none;
 }
