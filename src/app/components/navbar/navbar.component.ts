@@ -1,4 +1,6 @@
+import { EmailRegisComponent } from './../../modals/email-regis/email-regis.component';
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-navbar',
@@ -7,21 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  public myName = '';
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
-    this.initName();
   }
 
-  public onSubmit(): void {
-    const ba = 'abc';
+  onEmailRegis(): void {
+    this.modalService.open(EmailRegisComponent, { size: 'lg', centered: true })
   }
-
-  public initName(): void {
-    this.myName = 'Kim Yen';
-  }
-
 
 }
