@@ -1,13 +1,15 @@
 .tt-contact {
-
-    
-    .tt-contact-img {
-        height: 500px;
-        object-fit: cover;
-    }
-    
-    .tt-contact-body {
-        margin-top: 50px;
-        
+  .tt-contact-img {
+    height: 500px;
+    object-fit: cover;
   }
+
+  .tt-contact-body {
+    margin-top: 50px;
+
+  }
+}
+
+agm-map {
+  height: 500px;
 }

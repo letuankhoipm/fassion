@@ -31,3 +31,14 @@
   background: transparent;
   border: solid 2px $white;
 }
+
+.btn-tt-black {
+  color: $dark;
+  background-color: transparent;
+  border: solid 2px $dark;
+
+  &:hover {
+    color: white;
+    background-color: $dark;
+  }
+}
