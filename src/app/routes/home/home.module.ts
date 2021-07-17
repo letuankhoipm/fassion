@@ -1,3 +1,4 @@
+import { GalleryModule } from '@components/gallery/gallery.module';
 import { CarouselModule } from '@components/carousel/carousel.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -18,7 +19,8 @@ const routes: Route[] = [
   imports: [
     CommonModule,
     CarouselModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    GalleryModule
   ],
   exports: [
     HomeComponent

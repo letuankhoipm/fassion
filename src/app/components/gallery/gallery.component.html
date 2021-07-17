@@ -1,0 +1,11 @@
+<div class="tt-gallery-main">
+    <div class="container-fluid">
+        <div class="row">
+            <ng-container *ngFor="let card of cards">
+                <div [class.col-8]="card.col === 8" [class.col-4]="card.col === 4" class="tt-gallery-card my-3">
+                   <img class="w-100 tt-gallery-img" [src]="card.imgUrl" alt="img">
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>
