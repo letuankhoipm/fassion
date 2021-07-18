@@ -10,6 +10,19 @@
   }
 }
 
-agm-map {
-  height: 500px;
+.tt-map {
+  position: relative;
+
+  .tt-shadow {
+    width: 100%;
+    height: 600px;
+    background: rgba(32, 32, 32, .7);
+    position: absolute;
+    top: 0;
+    z-index: 99;
+  }
+
+  agm-map {
+    height: 600px;
+  }
 }
