@@ -2,7 +2,8 @@
     .tt-side-menu {
         height: 100vh;
         width: 100%;
-        background-color: rgb(196, 189, 189);
+        background-image: url("../../../assets/images/a1.jpg");
+        background-size: cover;
         transform: translate(100%, -10%);
         z-index: 10000;
         transition-duration: .4s;
@@ -11,5 +12,10 @@
     .tt-after-stretch {
         transform: translate(10%, -10%);
         transition-duration: .4s;
+    }
+
+    .tt-list {
+        margin-top: 150px;
+        margin-bottom: 150px;
     }
 }

@@ -73,15 +73,22 @@
         <div class="row">
             <div class="col-12">
                 <div [class.tt-after-stretch]="isShow" class="tt-side-menu position-fixed">
-                    <div class="container-fluid">
+                    <div class="container-fluid p-4 h-100">
                         <div class="row">
-                            <div class="col-7">
-
+                            <div class="col-8 my-auto">
                             </div>
-                            <div class="col-5">
+                            <div class="col-4 my-auto">
                                 <button (click)="onMenu()" class="btn-icon c-pointer">
                                     <i class="fas fa-times"></i>
                                 </button>
+                            </div>
+                            <div class="col-10 h-100 text-right">
+                                <div class="tt-list">
+                                    <p (click)="onMenu()" [routerLink]="['/']" routerLinkActive="router-link-active">TRANG CHỦ</p>
+                                    <p (click)="onMenu()" [routerLink]="['/product']" routerLinkActive="router-link-active">SẢN PHẨM</p>
+                                    <p>THÔNG TIN</p>
+                                    <p (click)="onMenu()" [routerLink]="['/contact']" routerLinkActive="router-link-active">LIÊN LẠC</p>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,9 +1,16 @@
 <div class="tt-gallery-main">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row d-none d-sm-block">
             <ng-container *ngFor="let card of cards">
                 <div [class.col-8]="card.col === 8" [class.col-4]="card.col === 4" class="tt-gallery-card my-3">
-                   <img class="w-100 tt-gallery-img" [src]="card.imgUrl" alt="img">
+                    <img class="w-100 tt-gallery-img" [src]="card.imgUrl" alt="img">
+                </div>
+            </ng-container>
+        </div>
+        <div class="row d-block d-sm-none">
+            <ng-container *ngFor="let card of cards">
+                <div class="col-12 tt-gallery-card my-3">
+                    <img class="w-100 tt-gallery-img" [src]="card.imgUrl" alt="img">
                 </div>
             </ng-container>
         </div>
