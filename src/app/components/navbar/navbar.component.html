@@ -1,4 +1,4 @@
-<div class="tt-navbar">
+<div class="tt-navbar d-none d-sm-block">
     <div class="container-fluid p-4">
         <div class="row">
             <div class="col-3 tt-logo">
@@ -7,12 +7,12 @@
             <div class="col-6 tt-list-nav text-center my-auto">
                 <ul class="tt-nav m-0 p-0">
                     <li class="tt-nav-item px-4">
-                        <span [routerLink]="['/']" routerLinkActive="router-link-active"  class="c-pointer">
+                        <span [routerLink]="['/']" routerLinkActive="router-link-active" class="c-pointer">
                             trang chủ
                         </span>
                     </li>
                     <li class="tt-nav-item px-4">
-                        <span [routerLink]="['/product']" routerLinkActive="router-link-active"  class="c-pointer">
+                        <span [routerLink]="['/product']" routerLinkActive="router-link-active" class="c-pointer">
                             sản phẩm
                         </span>
                     </li>
@@ -22,7 +22,7 @@
                         </span>
                     </li>
                     <li class="tt-nav-item px-4">
-                        <span [routerLink]="['/contact']" routerLinkActive="router-link-active"  class="c-pointer">
+                        <span [routerLink]="['/contact']" routerLinkActive="router-link-active" class="c-pointer">
                             liên lạc
                         </span>
                     </li>
@@ -54,4 +54,40 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="tt-navbar-mobile d-block d-sm-none">
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-5">
+                <img class="w-100" src="assets/images/logo-black.png" alt="tt-logo">
+            </div>
+            <div class="col-7 text-right my-auto">
+                <button (click)="onMenu()" class="btn-icon c-pointer">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div [class.tt-after-stretch]="isShow" class="tt-side-menu position-fixed">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-7">
+
+                            </div>
+                            <div class="col-5">
+                                <button (click)="onMenu()" class="btn-icon c-pointer">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>

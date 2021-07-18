@@ -1,4 +1,6 @@
 .tt-gallery-main {
+  position: relative;
+  z-index: -1;
   .tt-gallery-img {
     height: 475px;
     object-fit: cover;

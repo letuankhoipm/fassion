@@ -9,10 +9,15 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class NavbarComponent implements OnInit {
 
+  public isShow = false;
 
   constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
+  }
+
+  public onMenu(): void {
+    this.isShow = !this.isShow
   }
 
   onEmailRegis(): void {

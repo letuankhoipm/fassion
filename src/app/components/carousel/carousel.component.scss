@@ -21,6 +21,10 @@
     display: none;
   }
 
+  .carousel {
+    z-index: -1;
+  }
+
   .carousel-caption {
     bottom: 33% !important;
     font-family: 'Tangerine', cursive !important;

@@ -1,16 +1,22 @@
-<ngb-carousel *ngIf="listImg">
-    <ng-template ngbSlide *ngFor="let item of listImg">
-        <div class="picsum-img-wrapper">
-            <img class="tt-slide-img" [src]="item.imageUrl" alt="slide">
-            <div class="tt-shadow"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 p-0">
+            <ngb-carousel *ngIf="listImg">
+                <ng-template ngbSlide *ngFor="let item of listImg">
+                    <div class="picsum-img-wrapper">
+                        <img class="tt-slide-img" [src]="item.imageUrl" alt="slide">
+                        <div class="tt-shadow"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h1 class="tt-carousel-title">
+                            {{item.title}}
+                        </h1>
+                        <button class="btn-tt btn-tt-outline pt-2">
+                            {{item.action}}
+                        </button>
+                    </div>
+                </ng-template>
+            </ngb-carousel>
         </div>
-        <div class="carousel-caption">
-            <h1 class="tt-carousel-title">
-                {{item.title}}
-            </h1>
-            <button class="btn-tt btn-tt-outline pt-2">
-                {{item.action}}
-            </button>
-        </div>
-    </ng-template>
-</ngb-carousel>
+    </div>
+</div>
