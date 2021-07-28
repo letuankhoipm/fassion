@@ -4,7 +4,7 @@
             <img class="w-100 tt-contact-img" src="assets/images/contact.jpg" alt="contact-header">
         </div>
     </div>
-    <div class="tt-contact-body px-4">
+    <div *ngIf="user" class="tt-contact-body px-4">
         <div class="container-fluid px-4">
             <div class="row">
                 <div class="col-12 col-sm-6">
@@ -24,18 +24,30 @@
                         <h5 class="text-uppercase font-weight-bold">
                             địa chỉ
                         </h5>
-                        <p class="m-0">KTX Khu B, ĐHQG TP. Hồ Chí Minh</p>
-                        <p class="m-0">+84 965 497 410</p>
-                        <p class="m-0">tieutieushop@gmail.com</p>
+                        <p class="m-0">
+                            {{user.address}}
+                        </p>
+                        <p class="m-0">
+                            {{user.phone}}
+                        </p>
+                        <p class="m-0">
+                            {{user.mail}}
+                        </p>
                     </div>
                     <br>
                     <div class="tt-section">
                         <h5 class="text-uppercase font-weight-bold">
                             liên lạc
                         </h5>
-                        <p class="m-0">www.facebook.com/tieutieushop</p>
-                        <p class="m-0">instagram/tieutieu/shop</p>
-                        <p class="m-0">youtube/tieutieushop</p>
+                        <p class="m-0">
+                            {{user.facebook}}
+                        </p>
+                        <p class="m-0">
+                            {{user.ins}}
+                        </p>
+                        <p class="m-0">
+                            {{user.youtube}}
+                        </p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6">

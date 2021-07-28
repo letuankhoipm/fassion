@@ -1,32 +1,39 @@
 <div class="card tt-card" *ngIf="data">
-    <img class="card-img-top tt-img-card" [src]="data.imageUrl" alt="product">
+    <img class="card-img-top tt-img-card" [src]="data.data.imageUrl" alt="product">
     <div class="card-body text-center">
         <h5 class="font-weight-bold">
-            {{data.name}}
+            {{data.data.name}}
         </h5>
         <p class="card-text">
-            {{data.description}}
+            {{data.data.shortDescription}}
         </p>
-        <p>
+        <p class="text-left">
             <strong>$</strong>
             <span>
-                {{data.price}}
+                {{data.data.price}}
+            </span>
+        </p>
+        <p class="text-left">
+            <span>
+                Xuất xứ:
+                <strong>
+                    {{data.data.origin}}
+                </strong>
+            </span>
+        </p>
+        <p class="text-left">
+            <span>
+                Thương hiệu:
+                <strong>
+                    {{data.data.brand}}
+                </strong>
             </span>
         </p>
     </div>
     <div class="tt-card-shadow">
         <div class="text-center tt-card-shadow-content">
-            <h5 class="font-weight-bold">
-                {{data.name}}
-            </h5>
-            <p class="card-text">
-                {{data.description}}
-            </p>
-            <p>
-                <span>
-                    {{data.price}}
-                </span>
-                <strong>VND</strong>
+            <p class="card-text p-4">
+                {{data.data.description}}
             </p>
         </div>
     </div>

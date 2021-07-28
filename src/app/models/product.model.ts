@@ -1,8 +1,12 @@
 export interface ProductDetail {
-    id: number;
-    name: string;
-    price: string;
-    description: string;
-    imageUrl: string;
-    provider?: string;
+    id: string;
+    data: {
+        name: string;
+        price: string;
+        description: string;
+        imageUrl: string;
+        origin?: string;
+        brand?: string;
+        shortDescription?: string;
+    }
 }

@@ -1,3 +1,4 @@
+import { ProductService } from './../../services/product.service';
 import { ProductDetail } from './../../models/product.model';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,60 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
-  public listProducts: ProductDetail[] = [
-    {
-      id: 0,
-      name: 'Moi Gạo',
-      description: 'Mặt nạ tinh khiết chiết suất từ lúa gạo',
-      provider: 'Rice',
-      imageUrl: 'assets/images/prod_0.jpg',
-      price: '160,000'
-    },
-    {
-      id: 0,
-      name: 'Sparkling Lemon Foam Cleaner',
-      description: 'Sữa rửa mặt chua lè',
-      imageUrl: 'assets/images/prod_1.jpg',
-      provider: 'Holika Holika',
-      price: '160,000'
-    },
-    {
-      id: 0,
-      name: 'ALOE Soothing Gel',
-      description: 'Kem nha đam thoa cơ thể',
-      imageUrl: 'assets/images/prod_2.jpg',
-      provider: 'Holika Holika',
-      price: '160,000'
-    },
-    {
-      id: 0,
-      name: 'Moi Gạo',
-      description: 'Mặt nạ tinh khiết chiết suất từ lúa gạo',
-      provider: 'Rice',
-      imageUrl: 'assets/images/prod_0.jpg',
-      price: '160,000'
-    },
-    {
-      id: 0,
-      name: 'Sparkling Lemon Foam Cleaner',
-      description: 'Sữa rửa mặt chua lè',
-      imageUrl: 'assets/images/prod_1.jpg',
-      provider: 'Holika Holika',
-      price: '160,000'
-    },
-    {
-      id: 0,
-      name: 'ALOE Soothing Gel',
-      description: 'Kem nha đam thoa cơ thể',
-      imageUrl: 'assets/images/prod_2.jpg',
-      provider: 'Holika Holika',
-      price: '160,000'
-    },
-  ]
+  public listProducts: ProductDetail[] = [];
 
-  constructor() { }
+  constructor(
+    private productService: ProductService
+  ) { }
 
   ngOnInit(): void {
+    this._getProducts();
+  }
+
+  private _getProducts(): void {
+    this.productService.getProducts().subscribe((res: any) => {
+      console.log(res);
+      this.listProducts = res;
+
+    });
   }
 
 }
